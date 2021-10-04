@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 1024px;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+#hd-logo {
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    background: #ffcc92;
+}
+
+nav ul li {
+    padding: 5px;
+    list-style: none;
+    background: #ffb62e;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+    background: #c56c06;
+    letter-spacing: 2px;
+}
+
+li+li {
+    border-left: 1px solid #ffcfa3;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.content-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.content-item:hover {
+    box-shadow: 0 10px 20px #00000020;
+    margin: 5px;
+}
+
+.content-title {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.content-media {
+    width: 50%;
+}
+
+.content-media * {
+    width: 100%;
+}
+
+.content-description {
+    width: 50%;
+    padding: 5px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.btn {
+    padding: 10px 30px;
+    display: block;
+    border: none;
+    background: #ffae52;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.2s ease;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #c56c06;
+    letter-spacing: 2px;
+}
+
+.oder-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.oder-icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+.oder-icon+.oder-icon {
+    margin-left: 20px;
+}
+
+.oder-icon img {
+    width: 100%;
+}
+
+.footer-copyright {
+    padding: 20px 0;
+}
+
+@media screen and (max-width:739px) {
+    .content-media, .content-description {
+        width: 100%;
+    }
+}
