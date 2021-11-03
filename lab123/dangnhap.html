@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" defer></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/dangnhap.css">
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">
+            </div>
+            <div class="header_nav">
+                <a href="./" class="header_button">Trang chủ</a>
+                <a href="./gioithieu.html" class="header_button">Giới thiệu</a>
+                <a href="./sanpham.html" class="header_button">Sản phẩm</a>
+                <a href="./tintuc.html" class="header_button">Tin tức</a>
+                <a href="./dangnhap.html" class="header_button">Đăng nhập</a>
+                <a href="./dangky.html" class="header_button">Đăng ký</a>
+                <a href="./lienhe.html" class="header_button">Liên hệ</a>
+
+                <div class="search_wrapper">
+                    <input placeholder="Nhập nội dung cần tìm" type="text">
+                    <div class="search_button">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="search_button">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="yaourt_1"></div>
+            <div class="yaourt_2"></div>
+            <div class="yaourt_3"></span>
+            </div>
+        </div>
+
+        <main>
+            <h1 class="page_title">
+                Đăng nhập
+            </h1>
+
+            <form action="#" method="post">
+                <img src="./images/dangnhap/userlogin.png" alt="">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="login_icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Nhập email">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="login_icon">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <input type="password" placeholder="Nhập mật khẩu">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Bạn quên mật khẩu?
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox">
+                                Ghi nhớ mật khẩu đăng nhập cho lần sau
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <button type="submit">Đăng nhập</button>
+                                <button type="reset">Hủy</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+
+        </main>
+
+        <footer>
+            &copy; 2021 Bản quyền thuộc về FreeezeVN.
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+            <a href="#" class="to_top"></a>
+        </footer>
+
+        <script>
+            document.querySelector('form')
+                .addEventListener('submit', event => event.preventDefault())
+        </script>
+    </div>
+</body>
+
+</html>

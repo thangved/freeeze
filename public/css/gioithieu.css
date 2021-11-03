@@ -1,0 +1,24 @@
+.intro_grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro_grid p {
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.intro_col_4 {
+    width: 80%;
+    padding: 5px;
+}
+
+.intro_col_4 img {
+    width: 100%;
+}
+
+.intro_col_1 {
+    width: 20%;
+    padding: 5px;
+}
