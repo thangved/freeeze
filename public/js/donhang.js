@@ -8,19 +8,16 @@ const removeCart = (key) => {
     location.reload();
 }
 
-fetch('./data/products.json')
-    .then(data => data.json())
-    .then(data => {
-        let total = 0;
-        cart.forEach(e => {
-            productList.innerHTML += `<tr>
+let total = 0;
+cart.forEach(e => {
+    productList.innerHTML += `<tr>
                 <td>
-                    <img src="${data[e.key].photo}" alt="${data[e.key].name}"/>
+                    <img src="${$products[e.key].photo}" alt="${$products[e.key].name}"/>
                 </td>
-                <td>${data[e.key].name}</td>
+                <td>${$products[e.key].name}</td>
                 <td>${e.count}</td>
-                <td>${data[e.key].price}đ</td>
-                <td>${data[e.key].price * e.count}đ</td>
+                <td>${$products[e.key].price}đ</td>
+                <td>${$products[e.key].price * e.count}đ</td>
                 <td>
                     <div class="cart_icon" onclick="removeCart(${e.key})">
                     <i class="fas fa-trash-alt"></i>
@@ -28,10 +25,10 @@ fetch('./data/products.json')
                 </td>
             </tr>`;
 
-            total += data[e.key].price * e.count;
-        })
+    total += $products[e.key].price * e.count;
+})
 
-        productTotal.innerHTML += `
+productTotal.innerHTML += `
         <tr>
             <td colspan="6">
             Tổng thành tiền (A) = ${total}đ
@@ -62,4 +59,3 @@ fetch('./data/products.json')
             </td>
         </tr>
         `
-    })

@@ -3,6 +3,8 @@ const products = document.querySelectorAll('.product');
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 const addToCart = (input, key) => {
+    if (input.value <= 0 || input.value > 100)
+        return alert('Số lượng phải nằm từ 1 đến 100');
     let added = false;
 
     cart = cart.map(e => {
